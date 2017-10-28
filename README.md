@@ -1,7 +1,7 @@
 # skin-lesion-detection
 Automate skin lesion(Melanoma) diagnosis using opencv
 
-Melanoma is a skin cancer disease. According to stats the number of cases of melanoma is increasing rapidly. This melanoma is highly curable if it is detected early. So our idea is to automate skin lesion segmentation and diagnosis system using ADCDE parameters. 
+Melanoma is a skin cancer disease. According to stats the number of cases of melanoma is increasing rapidly. This melanoma is highly curable if it is detected early. So our idea is to automate skin lesion segmentation and diagnosis system using ABCDE parameters. 
 A - Asymmetry
 B - Border
 C - Color
