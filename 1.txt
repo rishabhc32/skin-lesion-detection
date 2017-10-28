@@ -1,0 +1,52 @@
+ABCDE rule :-
+             A - Asymmetry
+             B - Border irregularity
+             C - color
+             D - Diameter
+             E - Evolution
+
+what we did to detect Asymmetry?
+
+-> we took it as deviation from standard shapes.Most of the lesins match ellipse shape
+    so we made a best fit ellipse on the lesin and then compared its deviation from our best fit
+    ellipse and jugdeged it on a factor determined by taking mean of cancerous lesin deviations.
+    in our case it was 0.099 . if any lesin came out to be less than this value it will be considered 
+    as cancerous.
+
+how we determined border irregularity?
+
+-> for border irregularity we took a researched algorithm that took into consideration our best fit ellipse's 
+   perimeter , area , semi minor axis,semi major axis.and made a formulae to judge irregularity.then we took a 
+   mean of irregularity obtained by images of cancerous lesins.and thus obtained a parameter to detect
+   the lesin to be cancerous or not based on its irregularity factor so obtained.
+
+what algorithm we choose to detect color variation?
+
+-> TO DO
+
+diameter detection
+
+
+-> we had two methods to solve the issue of measuring diameter-
+
+   firstly-this is what we have done, because we didn't had a live specimen , so we had to choose this one
+            in this we are measuring the diameter of a reference image of a lesin by taking the reference of an 
+            object such as a coin whose dimensions are known to us.with the help of reference we take out pixel per meter 
+            and hence calculate diameter of lesin.
+
+   secondly - if we had a live specimen we can use phone camera whose focal length will be known.
+              so we can determine pixel per meter using that and eventually find daimeter of the lesin.
+              according to doctors if a lesin is more than 6mm in diameter than it is classified as 
+              a cancerous lesin.
+
+the most important factor to determine malenoma is Evolution
+
+->  it is E rule and is subdivided as EFG rule where E stands for elevation, F stand for firmness and G stands for growth.
+    in this we will be taking user input for elevation and firmness as it can be easily detected by a person so he/she can 
+    input yes or no for these two. for the last G growth we will take a image from the user on a regular interval of time.
+    this image will be compared to the previous images to check for growth measuring diameter each time.
+
+yet, our software is till under progress to improve the accuracy.there is fault in the segmentation of image it is 60% accurate 
+at the moment. we are trying different algorithms to increase it.
+
+thankyou 
